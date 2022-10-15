@@ -1,0 +1,260 @@
+<html>
+
+<head>
+  <title>Weather</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header>
+    <!-- start NavBar-->
+
+    <nav class="navbar navbar-expand-lg bg-dark  w-100  p-5 ">
+      <div class="container">
+        <a class="navbar-brand text-light fw-bolder" href="#"> <img class="p-2" src="./images/logo.png" alt="">Weather
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 w-50 justify-content-around">
+            <li class="nav-item">
+              <a class="nav-link  text-light activeBtn" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link text-light" href="#">News</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Live Cameras</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Photos</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Contact</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    <!-- #end Navar -->
+
+  </header>
+
+  <section id="home">
+    <!-- Start home -->
+
+    <div class="home">
+      <section class="search">
+        <div class="mb-3 container position-relative">
+          <input type="text" id="location-Input" class="input-style" placeholder="Find your location...">
+          <input type="button" value="find" id="submit" class=" search-btn">
+        </div>
+      </section>
+
+
+    </div>
+
+    <section class="forecast-container">
+      <div class="container">
+        <div class="row ">
+
+
+
+
+          <div class="col-md-12 col-xl-4 col-12 p-0">
+            <div class="card forecast-background">
+              <div class="card-header d-flex justify-content-between headerCard-background ">
+                <div id="current_day" class="day special-color-text">Thusday</div>
+                <div id="current_month" class="date special-color-text">october</div>
+
+              </div>
+              <div class="card-body mt-2">
+                <h5 id="curent-location" class="special-color-text">Cairo</h5>
+                <div class="forcast-info d-flex  p-3 align-content-center">
+                  <div class="current-degree"></div>
+                  <div class="degree-icon mt-4">
+
+                  </div>
+                </div>
+                <div class="custom p-2 custom-text-color custom-text-color">
+
+                </div>
+                <div class="span-group p-3">
+                  <span class="special-color-text ms-2">
+                    <img src="./images//asset 1.png" alt=""> 20%
+                  </span>
+                  <span class="special-color-text ms-2"> <img src="/images/asset 2.png" alt="">18km/h</span>
+                  <span class="special-color-text ms-2"> <img src="/images/asset 3.png" alt="">East</span>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+
+
+          <div class="col-md-12 col-xl-4 col-12 p-0">
+            <div class="card special-forecast-background">
+              <div class="card-header d-flex justify-content-center headerCard-background ">
+                <div id="next_day" class="day special-color-text "></div>
+
+              </div>
+              <div class="card-body">
+                <h5 class="location invisible">Cairo</h5>
+                <div class="forcast-info d-flex justify-content-around p-2 align-content-center">
+                  <div id="next_degree_icon" class="degree-icon">
+                  </div>
+                </div>
+                <div id="next_max_degree" class="degree text-center "></div>
+                <div id="next_min_degree" class="small-degree text-center special-color-text "></div>
+
+
+                <div id="next-custom" class="custom p-2 text-center custom-text-color">
+
+                </div>
+                <div class="span-group p-3 invisible">
+                  <span class="special-color-text ms-2 ">
+                    <img src="./images//asset 1.png" alt=""> 20%
+                  </span>
+                  <span class="special-color-text ms-2 "> <img src="/images/asset 2.png" alt="">18km/h</span>
+                  <span class="special-color-text ms-2"> <img src="/images/asset 3.png" alt="">East</span>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+
+
+          <div class="col-md-12 col-xl-4 col-12 p-0">
+            <div class="card forecast-background">
+              <div class="card-header d-flex justify-content-center headerCard-background ">
+                <div id="after_next_day" class="day special-color-text "></div>
+
+              </div>
+              <div class="card-body">
+                <h5 class="location invisible">Cairo</h5>
+                <div class="forcast-info d-flex justify-content-around  p-3 align-content-center">
+                  <div id="next_after_degree_icon" class="degree-icon">
+
+                  </div>
+                </div>
+                <div id="next_after_max_degree" class="degree text-center "></div>
+                <div id="next_after_min_degree" class="small-degree text-center special-color-text  "></div>
+
+
+                <div id="next_after-custom" class="custom p-2 text-center custom-text-color">
+
+                </div>
+                <div class="span-group p-2 invisible">
+                  <span class="special-color-text ms-2 ">
+                    <img src="./images//asset 1.png" alt=""> 20%
+                  </span>
+                  <span class="special-color-text ms-2 "> <img src="/images/asset 2.png" alt="">18km/h</span>
+                  <span class="special-color-text ms-2"> <img src="/images/asset 3.png" alt="">East</span>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+
+        </div>
+      </div>
+
+    </section>
+    <!-- End Home -->
+
+  </section>
+
+  <footer class="p-5">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-12">
+          <div class="mb-3 container position-relative">
+            <input type="email" id="location-Input" class="input-style" placeholder="Enter your mail to subscribe...">
+            <input type="button" value="subscribe" id="submit" class="subscribe-btn">
+            <br>
+            <br>
+            <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+          </div>
+
+        </div>
+
+
+        <div class="col-md-4 col-sm-12">
+
+          <div class="container p-2">
+            <!-- Section: Social media -->
+            <section class="ms-3">
+              <!-- Facebook -->
+              <a class=" btn-circle  btn btn-primary btn-floating " style="background-color: #3b5998;" href="#!"
+                role="button"><i class="fab fa-facebook-f"></i></a>
+
+              <!-- Twitter -->
+              <a class=" btn-circle  btn btn-primary btn-floating " style="background-color: #55acee;" href="#!"
+                role="button"><i class="fab fa-twitter"></i></a>
+
+              <!-- Google -->
+              <a class=" btn-circle  btn btn-primary btn-floating " style="background-color: #dd4b39;" href="#!"
+                role="button"><i class="fab fa-google"></i></a>
+
+
+
+              <!-- Linkedin -->
+              <a class=" btn-circle  btn btn-primary btn-floating " style="background-color: #0082ca;" href="#!"
+                role="button"><i class="fab fa-linkedin-in"></i></a>
+
+            </section>
+            <!-- Section: Social media -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <script src="/js/index.js"></script>
+
+
+</body>
+
+</html>
